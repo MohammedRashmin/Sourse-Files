@@ -1,0 +1,168 @@
+<div class="outSet">
+  <div class=" mb-5">
+    <div class="mt-2 container">
+      <!-- Tabs -->
+      <ul class="nav nav-tabs mb-4" >
+        <li class="nav-item">
+          <a class="nav-link " [routerLink]="['/admin/dashHome']">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" [routerLink]="['/admin/addBike']">Bike List</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " [routerLink]="['/admin/rentalRequest']">Bike Request</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " [routerLink]="['/admin/updateBike']">Update Bike</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/admin/deleteBike']">Delete Bike</a>
+        </li> -->
+  
+      </ul>
+  
+      <div class=" content flex-fill d-flex justify-content-end mb-3">
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">+ Add Bike</button>
+  
+      </div>
+  
+  
+      <!-- Reservations Table -->
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title mb-5">GG Bike Rental Bike List</h5>
+          <div class="row">
+  
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+              <div class="custom-card position-relative">
+                <!-- Badge -->
+                <span class="badge badge-custom">Unlimited Mileage</span>
+  
+                <!-- Image -->
+                <img src="BMW__R_1250_GS_.png" alt="Motorcycle Image" class="card-image">
+  
+                <!-- Location and Rating -->
+                <!-- <div class="location-text mt-2">
+                      <img src="https://via.placeholder.com/20x15" alt="Country Flag" class="me-1">
+                      <span>Poland</span>
+                      <span>•</span>
+                      <span>Warszawa</span>
+                    </div> -->
+                <div class="stars mt-1">
+                  &#9733; &#9733; &#9733; &#9733; &#9733;
+                </div>
+  
+                <!-- Title -->
+                <h5 class="card-title">KTM Super Adventure 1290 S</h5>
+  
+                <!-- Price -->
+                <p class="mb-1 price-text">from <span class="price">87 €</span>/day</p>
+  
+                <!-- Button -->
+                <!-- <button class="btn view-btn mt-2">View</button> -->
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+              <div class="custom-card position-relative">
+                <!-- Badge -->
+                <span class="badge badge-custom">Unlimited Mileage</span>
+  
+                <!-- Image -->
+                <img src="BMW__R_1250_GS_.png" alt="Motorcycle Image" class="card-image">
+  
+                <!-- Location and Rating -->
+                <!-- <div class="location-text mt-2">
+                      <img src="https://via.placeholder.com/20x15" alt="Country Flag" class="me-1">
+                      <span>Poland</span>
+                      <span>•</span>
+                      <span>Warszawa</span>
+                    </div> -->
+                <div class="stars mt-1">
+                  &#9733; &#9733; &#9733; &#9733; &#9733;
+                </div>
+  
+                <!-- Title -->
+                <h5 class="card-title">KTM Super Adventure 1290 S</h5>
+  
+                <!-- Price -->
+                <p class="mb-1 price-text">from <span class="price">87 €</span>/day</p>
+  
+                <!-- Button -->
+                <!-- <button class="btn view-btn mt-2">View</button> -->
+              </div>
+            </div>
+  
+  
+  
+          </div>
+  
+  
+        </div>
+      </div>
+  
+      <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Add Bike </h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="bikeName" class="form-label">Bike Name</label>
+                  <input type="text" class="form-control" id="bikeName" placeholder="Eg :- Avengers">
+  
+                </div>
+                <div class="mb-3">
+                  <label for="regNo" class="form-label">Bike Register No </label>
+                  <input type="text" class="form-control" id="regNo" placeholder="Eg: BK">
+  
+                </div>
+                <div class="mb-3">
+                  <label for="bikeBrand" class="form-label">Bike Brand</label>
+                  <input type="text" class="form-control" id="bikeBrand" placeholder="Per Day">
+                </div>
+                <div class="mb-3">
+                  <label for="bikeImg" class="form-label">Bike Image</label>
+                  <input type="file" accept=".jpg, .png" class="form-control" id="bikeImg" placeholder="Per Day">
+                </div>
+                <div class="mb-3">
+                  <label for="bikePrice" class="form-label">Bike Price</label>
+                  <input type="number" class="form-control" id="bikePrice" placeholder="Per Day">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Add
+                Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Bike Added Succesfully!</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <!-- Here have to add Bike Details for confirmation -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+  </div>
+</div>

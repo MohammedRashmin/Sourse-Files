@@ -1,0 +1,47 @@
+.metric-card {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .metric-card h6 {
+    color: #666;
+    font-weight: bold;
+  }
+  .metric-card .value {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .chart-card {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  .chart-title {
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  /* Responsive layout for larger screens */
+  @media (min-width: 992px) {
+    .dashboard-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    .chart-section {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 20px;
+    }
+  }
+  .outSet{
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+    background-color: white;
+    margin-bottom: 20px;
+    height: 80vh;
+    border-radius: 6px;
+    overflow: auto; /* Adds scrollbars when content overflows */
+    border: 1px solid #ccc;
+  }

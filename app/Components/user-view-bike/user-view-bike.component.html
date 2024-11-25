@@ -1,0 +1,78 @@
+<div class="viewBike">
+  <div class="container mt-5 ">
+    <div class="row">
+      <!-- Bike Information -->
+      <div class="col-md-6">
+        <img src="Honda__CB500F.png" alt="Kawasaki KLX 650" class="bike-image" width="400" height="400">
+        <h2 class="mt-4 text-uppercase fw-bold">Kawasaki Klx 650</h2>
+        <p class="text-muted">ENDURO</p>
+        <div class="details-section">
+          <span class="me-3">🏍️ 650cc</span>
+          <span class="me-3">⚡ 45 HP</span>
+          <span class="me-3">⚖️ 153kg</span>
+          <span>🔧 Manual</span>
+        </div>
+      </div>
+  
+      <!-- Rental Details -->
+      <div class="col-md-6">
+        <div class="card p-4 shadow-lg">
+          <h3 class="pricing text-center">Fill Here To Rent... 😎😎😎 </h3>
+          <p class="discount text-center">"Ready to hit the road? Rent your dream bike online and ride in style!"</p>
+  
+          <form>
+            <!-- Rental Dates -->
+            <div class="mb-3">
+              <label for="rental-dates" class="form-label">Rental Dates</label>
+              <div class="d-flex gap-2">
+                <input type="date" id="start-date" class="form-control" value="2024-07-16">
+                <input type="date" id="end-date" class="form-control" value="2024-10-22">
+              </div>
+            </div>
+  
+            <!-- Pickup and Dropoff -->
+            <div class="mb-3">
+              <label for="pickup-dropoff" class="form-label">From - To</label>
+              <div class="d-flex gap-2">
+                <input type="text" id="pickup" class="form-control" placeholder="Jaffna">
+                <input type="text" id="dropoff" class="form-control" placeholder="Kandy">
+              </div>
+            </div>
+  
+            <div class="mb-3">
+              <label for="pickup-dropoff" class="form-label">Rental Price</label>
+              
+                <input type="text" id="rentPrice" class="form-control" placeholder="Your Rent Price show Automatically" disabled>
+                <!-- <input type="text" id="dropoff" class="form-control" value="Kandy"> -->
+            
+            </div>
+
+            <div class="mb-3">
+              <label for="pickup-dropoff" class="form-label">Distance (km)</label>
+              
+                <input type="text" id="distance" class="form-control" placeholder="Your journey distance in km" disabled>
+                <!-- <input type="text" id="dropoff" class="form-control" value="Kandy"> -->
+            
+            </div>
+  
+            <!-- Riding Option -->
+            <div class="mb-4">
+              <label for="riding-option" class="form-label">How are you riding?</label>
+              <select id="riding-option" class="form-select">
+                <option value="alone" selected>Alone</option>
+                <option value="with-passenger">With Passenger</option>
+              </select>
+            </div>
+  
+            <!-- Checkout Button -->
+            <button type="submit" class="btn btn-primary w-100">Go to Checkout</button>
+
+           
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

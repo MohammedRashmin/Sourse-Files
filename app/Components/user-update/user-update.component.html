@@ -1,0 +1,63 @@
+<section class="h-100 back">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-lg-8 col-xl-6">
+          <div class="card rounded-3">
+            <!-- <img src="Update.JPG" class="w-100" style="border-top-left-radius: .3rem; border-top-right-radius: .3rem;" alt="Update photo"> -->
+            <div class="card-body p-4 p-md-5">
+              <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">Update User Info</h3>
+  
+              <form class="px-md-2" [formGroup]="updateForm" (ngSubmit)="UpdateUser()">
+  
+                <div class="form-outline mb-4">
+                  <label for="firstName">First Name <span class="text-danger">*</span></label>
+                  <input type="text" id="firstName" class="form-control" placeholder="Enter Your First Name" formControlName="FirstName" />
+                </div>
+  
+                <div class="form-outline mb-4">
+                  <label for="lastName">Last Name <span class="text-danger">*</span></label>
+                  <input type="text" id="lastName" class="form-control" placeholder="Enter Your Last Name" formControlName="LastName" />
+                </div>
+  
+                <div class="form-outline mb-4">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" class="form-control" formControlName="Email" />
+                </div>
+  
+                <div class="form-outline mb-4">
+                  <label for="mobileNumber">Mobile Number <span class="text-danger">*</span></label>
+                  <input type="text" id="mobileNumber" class="form-control" placeholder="Eg: 0771234567" formControlName="MobileNumber" />
+                </div>
+  
+                <div class="form-outline mb-4">
+                  <label for="nic">NIC Number</label>
+                  <input type="text" id="nic" class="form-control"  formControlName="NIC" />
+                </div>
+  
+                <div class="form-outline mb-4">
+                  <label for="licenseNumber">License Number <span class="text-danger">*</span></label>
+                  <input type="text" id="licenseNumber" class="form-control" placeholder="Eg: B4647245" formControlName="LicenseNumber" />
+                </div>
+
+                <div class="form-outline mb-4">
+                  <h4>Change Password</h4>
+                  <label for="oldPassword">Password <span class="text-danger">*</span></label>
+                  <input type="password" id="oldPassword" class="form-control" placeholder="Enter Old Password" formControlName="Password" />
+                </div>
+  
+              
+
+  
+             
+  
+                <button type="submit" class="btn btn-primary btn-lg mb-1" [disabled]="updateForm.invalid">Update</button>
+  
+              </form>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  

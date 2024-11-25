@@ -1,0 +1,63 @@
+<div class="outSet">
+    <div class=" mb-5">
+        <div class="mt-2 container">
+            <!-- Tabs -->
+            <ul class="nav nav-tabs mb-4">
+                <li class="nav-item">
+                    <a class="nav-link " [routerLink]="['/admin/dashHome']">Rental </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" [routerLink]="['/admin/addBike']">Report2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " [routerLink]="['/admin/rentalRequest']">Report3</a>
+                </li>             
+            </ul>
+
+            <div class="container my-5">
+                <div class="report-header text-center">
+                  <h2>Motorbike Rental Report</h2>
+                  <p class="lead">A summary of rental performance and statistics for the past year.</p>
+                </div>
+              </div>
+            
+              <!-- Statistics Section -->
+              <div class="container mb-5">
+                <div class="row text-center">
+                  <div class="col-6 col-md-3 mb-4">
+                    <div class="stat-card">
+                      <h3>2,500</h3>
+                      <p>Total Rentals</p>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3 mb-4">
+                    <div class="stat-card">
+                      <h3>1,800</h3>
+                      <p>Returning Customers</p>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3 mb-4">
+                    <div class="stat-card">
+                      <h3>300</h3>
+                      <p>New Customers</p>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3 mb-4">
+                    <div class="stat-card">
+                      <h3>95%</h3>
+                      <p>Customer Satisfaction</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="container">
+                <h4 class="text-center">Monthly Rental Trends</h4>
+                <div class="chart-container">
+                  <canvas id="rentalChart"></canvas>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>

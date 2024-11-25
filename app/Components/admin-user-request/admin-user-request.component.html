@@ -1,0 +1,45 @@
+<section class=" back outSet">
+    <div class=" table-custom ">
+        <div class="booking-header my-3">
+          <h5>User Account Craetion Requests</h5>
+          <button class="btn btn-outline-secondary"><i class="bi bi-printer-fill"></i>  Print</button>
+        </div>
+      
+        <table class="table table-hover table-bordered shadow-lg rounded" style="width: 95%; margin-bottom: 20px;">
+          <thead>
+            <tr>
+              <th>User Id </th>
+              <th>User Name</th>
+              <th>Licnece Number</th>
+              <th>Licence Image</th>
+              <th>Captured Image</th>
+              <th>Accept / Decline</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr  *ngFor="let user of users">
+              <td>{{user.userId}}</td>
+              <td>{{user.firstName }} {{user.lastName}}</td>
+              <td>{{user.licenseNumber}}</td>
+              <td class="">
+                <div class="d-flex align-items-center image-container">
+                    <img [src]="'http://localhost:5102' + user.licenseImage" alt="Licence Image" class=" me-4 zoom-image" width="100" height="80">
+              
+                  </div>
+              </td>
+              <td>
+                <div class="d-flex align-items-center image-container">
+                    <img [src]="'http://localhost:5102' +user.CameraCapture" alt="Capyured Image" class=" me-4 zoom-image" width="60" height="40">
+
+                  </div>
+              </td>
+              <td>
+                <button class="btn btn-accept btn-sm  mb-3"> Accept</button> <br>
+                <button class="btn btn-danger btn-sm ">Decline</button>
+              </td>
+            </tr>
+         
+          </tbody>
+        </table>
+      </div>
+</section>
